@@ -7,15 +7,20 @@ Thus to cipher a given text we need an integer value, known as shift which indic
 The encryption can be represented using modular arithmetic by first transforming the letters into numbers, according to the scheme, A = 0, B = 1,…, Z = 25. Encryption of a letter by a shift n can be described mathematically as.
 
 For Encryption:  E(x)=(x+n)mod(26)
+
 For Decryption:  E(x)=(x-n)mod(26)
 
 Algorithm for Caesar Cipher:
+
 Input:
 
-A String of lower case letters, called Text.
-An Integer between 0-25 denoting the required shift.
+a)A String of lower case letters, called Text.
+b)An Integer between 0-25 denoting the required shift.
+
 Procedure:
 
-Traverse the given text one character at a time .
-For each character, transform the given character as per the rule, depending on whether we’re encrypting or decrypting the text.
-Return the new string generated.
+a)Traverse the given text one character at a time .
+
+b)For each character, transform the given character as per the rule, depending on whether we’re encrypting or decrypting the text.
+
+c)Return the new string generated.
